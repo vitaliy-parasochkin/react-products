@@ -4,7 +4,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore from "swiper";
 import { Navigation, Pagination } from "swiper/modules";
 import ProductItem from "./ProductItem.tsx";
-import React, { useState } from "react";
+import { useState } from "react";
 import "swiper/css/navigation";
 import "swiper/css";
 import ProductsSectionTitle from "./ProductsSectionTitle.tsx";

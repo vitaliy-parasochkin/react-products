@@ -10,11 +10,6 @@ import ProductPrice from "./ProductPrice.tsx";
 import IconButton from "./IconButton.tsx";
 import { toggleProduct } from "../redux/slices/favoriteProductsSlice.ts";
 import clsx from "clsx";
-import Modal from "./Modal.tsx";
-import ModalTitle from "./ModalTitle.tsx";
-import CartProducts from "./CartProducts.tsx";
-import CartTotal from "./CartTotal.tsx";
-import ButtonItem from "./ButtonItem.tsx";
 import CartModal from "./CartModal.tsx";
 
 export default function ProductItem({
@@ -73,10 +68,10 @@ export default function ProductItem({
     <>
       <div className="flex flex-col rounded gap-y-1 relative border pb-2">
         <div className="absolute top-2 left-2 flex items-center gap-x-2">
-          {discountPercentage > 0 && (
+          {discountPercentage && (
             <Badge variant="danger">-{discountPercentage}%</Badge>
           )}
-          {isNew > 0 && <Badge variant="success">new</Badge>}
+          {isNew && <Badge variant="success">new</Badge>}
         </div>
         <IconButton
           variant="light"

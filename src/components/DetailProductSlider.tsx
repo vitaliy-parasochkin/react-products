@@ -1,7 +1,7 @@
 import IconButton from "./IconButton.tsx";
 import { AiOutlineArrowLeft, AiOutlineArrowRight } from "react-icons/ai";
 import { Swiper, SwiperSlide } from "swiper/react";
-import React, { useState } from "react";
+import { useState } from "react";
 import SwiperCore from "swiper";
 
 interface DetailProductSliderProps {

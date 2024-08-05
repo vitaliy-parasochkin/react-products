@@ -1,6 +1,5 @@
 import { Autoplay, Pagination } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-import React from "react";
 import { mainSliderImages } from "../mocks/mainSliderImages.ts";
 import { NavLink } from "react-router-dom";
 import "swiper/css/pagination";

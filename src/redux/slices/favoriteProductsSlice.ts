@@ -2,7 +2,7 @@ import { createSlice } from "@reduxjs/toolkit";
 import { cartProductSliceInitState } from "../../types";
 
 const initialState: cartProductSliceInitState = {
-  items: JSON.parse(localStorage.getItem("favoriteProducts")) || [],
+  items: JSON.parse(localStorage.getItem("favoriteProducts") || "[]"),
 };
 
 export const favoriteProductsSlice = createSlice({

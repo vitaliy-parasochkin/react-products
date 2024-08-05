@@ -1,11 +1,9 @@
 import { useParams } from "react-router";
 import { useGetQuery } from "../redux/slices/apiSlice.ts";
 import ProductItem from "../components/ProductItem.tsx";
-import { SwiperSlide } from "swiper/react";
 import ProductItemSkeleton from "../components/ProductItemSkeleton.tsx";
-import React from "react";
-import imgNoData from "../assets/noData.jpg";
 import NoData from "../components/NoData.tsx";
+import { IProductItem } from "../types";
 
 export default function Category() {
   const { categoryName } = useParams();
@@ -23,7 +21,9 @@ export default function Category() {
         {isFetching ? (
           [...Array(10)].map((_, i) => <ProductItemSkeleton key={i} />)
         ) : data ? (
-          data.map((item) => <ProductItem {...item} key={item.id} />)
+          data.map((item: IProductItem) => (
+            <ProductItem {...item} key={item.id} />
+          ))
         ) : (
           <NoData text="No products in this category" />
         )}

@@ -1,6 +1,7 @@
 import { Dialog, Transition } from "@headlessui/react";
+import { ModalProps } from "../types";
 
-export default function Modal({ isOpen, closeModal, children }) {
+export default function Modal({ isOpen, closeModal, children }: ModalProps) {
   return (
     <Transition appear show={isOpen}>
       <Dialog as="div" className="relative z-50" onClose={closeModal}>

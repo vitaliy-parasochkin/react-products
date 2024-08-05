@@ -1,4 +1,3 @@
-import React from "react";
 import imgEmptyCart from "../assets/emptyCart.jpg";
 
 export default function EmptyCart() {

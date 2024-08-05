@@ -3,10 +3,7 @@ import clsx from "clsx";
 import IconButton from "./IconButton.tsx";
 import { AiOutlineHeart } from "react-icons/ai";
 import { BsCart } from "react-icons/bs";
-import ThemeController from "./ThemeController.tsx";
 import { useAppSelector } from "../hooks";
-import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
-import { BiUser } from "react-icons/bi";
 
 const pages = [
   { to: "/", title: "Home" },

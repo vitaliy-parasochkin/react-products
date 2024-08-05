@@ -1,6 +1,5 @@
 import { AiFillStar } from "react-icons/ai";
 import ProductPrice from "../components/ProductPrice.tsx";
-import React from "react";
 import { useAppDispatch, useAppSelector, useModal } from "../hooks";
 import DetailProductSlider from "../components/DetailProductSlider.tsx";
 import { useGetQuery } from "../redux/slices/apiSlice.ts";

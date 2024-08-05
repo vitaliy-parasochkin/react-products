@@ -1,8 +1,9 @@
 import { DialogTitle } from "@headlessui/react";
 import { IoClose } from "react-icons/io5";
 import IconButton from "./IconButton.tsx";
+import { ModalTitleProps } from "../types";
 
-export default function ModalTitle({ closeModal, children }) {
+export default function ModalTitle({ closeModal, children }: ModalTitleProps) {
   return (
     <DialogTitle className="flex items-center justify-between">
       <h3 className="text-lg font-medium text-gray-900">{children}</h3>

@@ -11,21 +11,23 @@ import Favorites from "./pages/Favorites.tsx";
 import Category from "./pages/Category.tsx";
 
 function App() {
-  const router = createBrowserRouter([
-    {
-      path: "/",
-      element: <MainLayout />,
-      children: [
-        { path: "", element: <Home /> },
-        { path: "contact/", element: <Contact /> },
-        { path: "about/", element: <About /> },
-        { path: "cart/", element: <Cart /> },
-        { path: "products/:id", element: <DetailProduct /> },
-        { path: "favorites/", element: <Favorites /> },
-        { path: "categories/:categoryName", element: <Category /> },
-      ],
-    },
-  ]);
+  const router = createBrowserRouter(
+    [
+      {
+        element: <MainLayout />,
+        children: [
+          { path: "", element: <Home /> },
+          { path: "contact/", element: <Contact /> },
+          { path: "about/", element: <About /> },
+          { path: "cart/", element: <Cart /> },
+          { path: "products/:id", element: <DetailProduct /> },
+          { path: "favorites/", element: <Favorites /> },
+          { path: "categories/:categoryName", element: <Category /> },
+        ],
+      },
+    ],
+    { basename: "/react-products/" },
+  );
 
   return (
     <Provider store={store}>

@@ -1,5 +1,4 @@
 import { ICartItemCount } from "../types";
-import React from "react";
 import { useAppDispatch } from "../hooks";
 import { editCartProduct } from "../redux/slices/cartProductsSlice.ts";
 import { AiOutlineMinus, AiOutlinePlus } from "react-icons/ai";

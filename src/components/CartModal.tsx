@@ -3,10 +3,14 @@ import ModalTitle from "./ModalTitle.tsx";
 import CartProducts from "./CartProducts.tsx";
 import ButtonItem from "./ButtonItem.tsx";
 import CartTotal from "./CartTotal.tsx";
-import imgEmptyCart from "../assets/emptyCart.jpg";
 import EmptyCart from "./EmptyCart.tsx";
+import { CartModalProps } from "../types";
 
-export default function CartModal({ cartProducts, isOpen, closeModal }) {
+export default function CartModal({
+  cartProducts,
+  isOpen,
+  closeModal,
+}: CartModalProps) {
   return (
     <Modal isOpen={isOpen} closeModal={closeModal}>
       <ModalTitle closeModal={closeModal}>Cart</ModalTitle>

@@ -1,5 +1,4 @@
 import imgNoData from "../assets/noData.jpg";
-import React from "react";
 import clsx from "clsx";
 
 interface NoDataProps {

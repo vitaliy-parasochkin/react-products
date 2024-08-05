@@ -1,7 +1,6 @@
 import { ICartProductItem } from "../types";
 import ProductPrice from "./ProductPrice.tsx";
 import CartItemCount from "./CartItemCount.tsx";
-import React from "react";
 import { NavLink } from "react-router-dom";
 import { useAppDispatch } from "../hooks";
 import { deleteCartProduct } from "../redux/slices/cartProductsSlice.ts";

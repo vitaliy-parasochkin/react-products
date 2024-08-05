@@ -1,8 +1,6 @@
 import { useAppSelector } from "../hooks";
 import ProductItem from "../components/ProductItem.tsx";
-import imgNoData from "../assets/noData.jpg";
 import NoData from "../components/NoData.tsx";
-import React from "react";
 
 export default function Favorites() {
   const favoriteProducts = useAppSelector(
